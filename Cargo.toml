@@ -1,6 +1,6 @@
 [package]
 name = "bevy_center"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A Bevy debug plugin that draws a colored marker to the center of the screen on startup"
 repository = "https://github.com/DMoore12/bevy_center"
