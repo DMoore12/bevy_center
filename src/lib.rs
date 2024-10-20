@@ -1,14 +1,12 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
+/// Center marker plugin
+pub mod center_marker;
+
+/// Commonly used stuff
+pub mod prelude {
+    #[doc(hidden)]
+    pub use crate::center_marker::{CenterEntity, CenterMarkerPlugin};
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+#[doc = include_str!("../README.md")]
+#[cfg(doctest)]
+struct ReadmeDoctest;
