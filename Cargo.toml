@@ -6,8 +6,8 @@ description = "A Bevy debug plugin that draws a colored marker to the center of 
 repository = "https://github.com/DMoore12/bevy_center"
 readme = "README.md"
 license = "MIT"
-categories = ["parsing"]
-keywords = ["systemverilog", "parser"]
+categories = ["development-tools"]
+keywords = ["bevy", "bevy-debug", "debug"]
 exclude = [".*"]
 
 [dependencies]

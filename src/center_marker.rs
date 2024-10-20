@@ -14,6 +14,7 @@ pub struct CenterMarkerResource {
 }
 
 impl FromWorld for CenterMarkerResource {
+    /// Configures center marker to a red 2x2 px square
     fn from_world(_world: &mut World) -> Self {
         Self {
             color: Color::srgb(1., 0., 0.),
