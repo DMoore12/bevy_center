@@ -28,4 +28,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build docs
-      run: cargo rustdoc --lib
+      run: cargo rustdoc --lib --no-deps
