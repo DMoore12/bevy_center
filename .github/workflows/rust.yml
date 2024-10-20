@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Prepare
-      run: sudo apt install librust-alsa-sys-dev
+      run: sudo apt install librust-alsa-sys-dev && sudo apt install libudev-dev
     - name: Build
       run: cargo build --verbose
     - name: Run tests
@@ -30,6 +30,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Prepare
-      run: sudo apt install librust-alsa-sys-dev
+      run: sudo apt install librust-alsa-sys-dev && sudo apt install libudev-dev
     - name: Build docs
       run: cargo rustdoc --lib
